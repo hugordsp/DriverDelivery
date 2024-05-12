@@ -22,11 +22,5 @@ public class Driver : MonoBehaviour
 
         transform.Rotate(0, 0, -steerAmount); //steer left and right
         transform.Translate(0, moveAmount * 0.01f * nitroAmount, 0); //move forward and backward
-        // if (Input.GetButton("Jump"))
-        // {
-        //     spriteRenderer.sprite = Resources.Load<Sprite>("Car 3_nitro");
-        // } else {
-        //     spriteRenderer.sprite = Resources.Load<Sprite>("Car 3");
-        // }
     }
 }
