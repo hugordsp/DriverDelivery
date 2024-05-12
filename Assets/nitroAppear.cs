@@ -2,13 +2,16 @@ using UnityEngine;
 
 public class nitroAppear : MonoBehaviour
 {
+
+    [SerializeField] Color32 nitroOn = new Color32(255, 255, 255, 255);
+    [SerializeField] Color32 nitroOf = new Color32(255, 255, 255, 0);
     SpriteRenderer spriteRenderer;
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (Input.GetButton("Jump") == false)
         {
-            spriteRenderer.sprite = null;
+            spriteRenderer.color = nitroOf;
         }
     }
 
@@ -17,11 +20,11 @@ public class nitroAppear : MonoBehaviour
     {
         if (Input.GetButton("Jump"))
         {
-            spriteRenderer.sprite = Resources.Load<Sprite>("nitro");
+            spriteRenderer.color = nitroOn;
         }
         else
         {
-            spriteRenderer.sprite = null;
+            spriteRenderer.color = nitroOf;
         }
     }
 }

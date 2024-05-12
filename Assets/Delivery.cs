@@ -9,7 +9,7 @@ public class Delivery : MonoBehaviour
     [SerializeField] Color32 noPackageColor = new Color32(255, 1, 1, 255); //Set the no package color
     SpriteRenderer spriteRenderer;
     bool hasPackage;
-
+    
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>(); //Get the SpriteRenderer component

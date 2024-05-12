@@ -3074,7 +3074,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.1, y: -11.1, z: -1}
+  m_LocalPosition: {x: -12.3, y: -14.79, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7211,7 +7211,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: d13ff23548319484e9cfa50af861d26f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7233,6 +7233,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f90b5f27138874429d6337f8f37e0b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nitroOn:
+    serializedVersion: 2
+    rgba: 4294967295
+  nitroOf:
+    serializedVersion: 2
+    rgba: 16777215
 --- !u!1 &1554646036
 GameObject:
   m_ObjectHideFlags: 0
@@ -8772,7 +8778,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: d13ff23548319484e9cfa50af861d26f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8794,6 +8800,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f90b5f27138874429d6337f8f37e0b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nitroOn:
+    serializedVersion: 2
+    rgba: 4294967295
+  nitroOf:
+    serializedVersion: 2
+    rgba: 16777215
 --- !u!1 &2005886351
 GameObject:
   m_ObjectHideFlags: 0
