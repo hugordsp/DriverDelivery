@@ -18,7 +18,9 @@ public class nitroAppear : MonoBehaviour
         if (Input.GetButton("Jump"))
         {
             spriteRenderer.sprite = Resources.Load<Sprite>("nitro");
-        } else {
+        }
+        else
+        {
             spriteRenderer.sprite = null;
         }
     }
