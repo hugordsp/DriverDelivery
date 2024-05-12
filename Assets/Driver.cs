@@ -6,6 +6,12 @@ public class Driver : MonoBehaviour
     [SerializeField] float steerSpeed = 300f; //steer left and right
     [SerializeField] float moveSpeed = 1500f; //move forward and backward
     [SerializeField] float acceleration = 1.5f; //nitro
+    SpriteRenderer spriteRenderer;
+
+    void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>(); //Get the SpriteRenderer componen
+    }
 
     void Update()
     {
@@ -16,6 +22,11 @@ public class Driver : MonoBehaviour
 
         transform.Rotate(0, 0, -steerAmount); //steer left and right
         transform.Translate(0, moveAmount * 0.01f * nitroAmount, 0); //move forward and backward
-
+        if (Input.GetButton("Jump"))
+        {
+            spriteRenderer.sprite = Resources.Load<Sprite>("Car 3_nitro");
+        } else {
+            spriteRenderer.sprite = Resources.Load<Sprite>("Car 3");
+        }
     }
 }
