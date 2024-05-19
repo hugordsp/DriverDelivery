@@ -1027,7 +1027,7 @@ MonoBehaviour:
     rgba: 4279401181
   noPackageColor:
     serializedVersion: 2
-    rgba: 4278256127
+    rgba: 4294967295
 --- !u!114 &100146561
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ public class Delivery : MonoBehaviour
 
     [SerializeField] float delay = 0.5f;                //Set the delay to 0.5 seconds
     [SerializeField] Color32 hasPackageColor = new Color32(221, 122, 18, 255); //Set the package color
-    [SerializeField] Color32 noPackageColor = new Color32(255, 1, 1, 255); //Set the no package color
+    [SerializeField] Color32 noPackageColor = new Color32(255, 255, 255, 255); //Set the no package color
     SpriteRenderer spriteRenderer;
     bool hasPackage;
     
