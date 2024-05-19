@@ -6,12 +6,6 @@ public class Driver : MonoBehaviour
     [SerializeField] float steerSpeed = 300f; //steer left and right
     [SerializeField] float moveSpeed = 1500f; //move forward and backward
     [SerializeField] float acceleration = 1.5f; //nitro
-    SpriteRenderer spriteRenderer;
-
-    void Start()
-    {
-        spriteRenderer = GetComponent<SpriteRenderer>(); //Get the SpriteRenderer component
-    }
 
     void Update()
     {
@@ -22,5 +16,18 @@ public class Driver : MonoBehaviour
 
         transform.Rotate(0, 0, -steerAmount); //steer left and right
         transform.Translate(0, moveAmount * 0.01f * nitroAmount, 0); //move forward and backward
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "speedBump")
+        {
+            moveSpeed = 3000f;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        moveSpeed = 1500f;
     }
 }
